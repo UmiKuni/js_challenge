@@ -4,7 +4,7 @@ Chào mừng bạn đến với **Thử Thách JavaScript**! Repository này ch�
 
 ## 🛠 Hướng Dẫn Cài Đặt Môi Trường
 
-### Bước 1: Cài Đặt Git
+### Cài Đặt Git
 
 #### Windows:
 
@@ -39,7 +39,7 @@ sudo apt install git
 git --version
 ```
 
-### Bước 2: Cài Đặt Node.js
+### Cài Đặt Node.js
 
 #### Windows & macOS:
 
@@ -62,7 +62,7 @@ node --version
 npm --version
 ```
 
-### Bước 3: Cấu Hình Git (Lần đầu sử dụng)
+### Cấu Hình Git (Lần đầu sử dụng)
 
 ```bash
 # Thiết lập tên người dùng
