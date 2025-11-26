@@ -17,7 +17,10 @@
  */
 
 function createCounter(n) {
-  // TODO: Implement this function
+  let counter = n;
+  return function() {
+    return counter++;
+  };
 }
 
 module.exports = createCounter;
