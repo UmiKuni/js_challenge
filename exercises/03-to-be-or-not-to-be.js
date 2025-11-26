@@ -21,6 +21,17 @@
 
 function expect(val) {
   // TODO: Implement this function
+  return {
+    toBe: function(x) {
+      if (val === x) return true;
+      else throw new Error("Not Equal");
+    },
+
+    notToBe: function(x) {
+      if (x !== val) return true;
+      else throw new Error("Equal");
+    }
+  }
 }
 
 module.exports = expect;

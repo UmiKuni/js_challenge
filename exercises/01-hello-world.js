@@ -1,4 +1,4 @@
-/**
+  /**
  * Problem 1: Create Hello World Function
  *
  * Write a function createHelloWorld. It should return a new function that always returns "Hello World".
@@ -17,7 +17,9 @@
 
 function createHelloWorld() {
   // TODO: Implement this function
-  return function (...args) {};
+  return function (...args) {
+    return "Hello World";
+  };
 }
 
 module.exports = createHelloWorld;

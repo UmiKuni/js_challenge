@@ -23,6 +23,11 @@
 
 function map(arr, fn) {
   // TODO: Implement this function
+  const Arr = new Array(arr.length);
+  for (let i = 0; i < arr.length; ++i) {
+    Arr[i] = fn(arr[i], i);
+  }
+  return Arr;
 }
 
 module.exports = map;

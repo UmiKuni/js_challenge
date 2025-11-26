@@ -27,6 +27,11 @@
 
 function filter(arr, fn) {
   // TODO: Implement this function
+  const Arr = [];
+  for (let i = 0; i < arr.length; ++i) {
+    if (fn(arr[i], i)) Arr.push(arr[i]);
+  }
+  return Arr;
 }
 
 module.exports = filter;
