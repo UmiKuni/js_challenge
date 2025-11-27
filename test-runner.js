@@ -720,7 +720,7 @@ function testCompose() {
   safeTest(() => {
     const functions = [(x) => x + 1, (x) => x * 2, (x) => x - 3];
     const fn = compose(functions);
-    expectEqual(fn(0), -2, "Zero input with multiple operations");
+    expectEqual(fn(0), -5, "Zero input with multiple operations");
   }, "Compose Test 10");
 }
 

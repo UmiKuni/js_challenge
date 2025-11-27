@@ -83,7 +83,7 @@ git config --list
 
 ```bash
 git clone https://github.com/UmiKuni/js_challenge.git
-cd js-30-days-challenge
+cd js_challenge
 ```
 
 ### Bước 2: Tạo Nhánh Cá Nhân
