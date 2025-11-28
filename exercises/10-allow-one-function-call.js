@@ -23,7 +23,14 @@
  */
 
 function once(fn) {
-  // TODO: Implement this function
+  let called = false;
+  let result;
+  return function(...args) {
+    if (called) return undefined;
+    called = true;
+    result = fn(...args);
+    return result;
+  };
 }
 
 module.exports = once;
