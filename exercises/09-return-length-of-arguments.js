@@ -17,7 +17,7 @@
  */
 
 function argumentsLength(...args) {
-  // TODO: Implement this function
+  return args.length;
 }
 
 module.exports = argumentsLength;
