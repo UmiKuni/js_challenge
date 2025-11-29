@@ -22,7 +22,13 @@
  */
 
 function map(arr, fn) {
-  // TODO: Implement this function
+  const r = [];              
+    
+    for (let i = 0; i < arr.length; i++) {
+        r[i] = fn(arr[i], i);   
+    }
+    
+    return r;
 }
 
 module.exports = map;
