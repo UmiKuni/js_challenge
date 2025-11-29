@@ -23,6 +23,19 @@
  */
 
 function createCounter(init) {
+  var ans = init;
+  return{
+    increment(){
+      return ++ans;
+    },
+    decrement(){
+      return --ans;
+    },
+    reset(){
+      ans = init;
+      return ans;
+    }
+  };
   // TODO: Implement this function
 }
 
