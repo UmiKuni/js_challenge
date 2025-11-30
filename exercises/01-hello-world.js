@@ -17,7 +17,9 @@
 
 function createHelloWorld() {
   // TODO: Implement this function
-  return function (...args) {};
+  return function (...args) {
+    return "Hello World";
+  };
 }
 
 module.exports = createHelloWorld;
