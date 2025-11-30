@@ -29,6 +29,11 @@
 
 function reduce(nums, fn, init) {
   // TODO: Implement this function
+  let a = init;
+  for (let i = 0; i < nums.length; i++) {
+    a = fn(a, nums[i]);
+  }
+  return a;
 }
 
 module.exports = reduce;
