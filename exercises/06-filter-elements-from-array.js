@@ -27,6 +27,15 @@
 
 function filter(arr, fn) {
   // TODO: Implement this function
+  const kq=[];
+  for (let i=0; i<arr.length; i++) 
+  {
+    if (fn(arr[i],i)) 
+    {
+      kq.push(arr[i]);
+    }
+  }
+  return kq;
 }
 
 module.exports = filter;
