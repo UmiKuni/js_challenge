@@ -24,6 +24,25 @@
 
 function createCounter(init) {
   // TODO: Implement this function
+  left c=init;
+  return
+  {
+    increment: function()
+    {
+      return ++c;
+    };
+
+    decrement: function()
+    {
+      return --n;
+    },
+
+    reset: function()
+    {
+      c=init;
+      return c;
+    }
+  }
 }
 
 module.exports = createCounter;
