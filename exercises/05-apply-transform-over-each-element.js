@@ -22,7 +22,7 @@
  */
 
 function map(arr, fn) {
-  const r = [];              
+  var r = [];              
     
     for (let i = 0; i < arr.length; i++) {
         r[i] = fn(arr[i], i);   

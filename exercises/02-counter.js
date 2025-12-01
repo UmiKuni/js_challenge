@@ -17,9 +17,11 @@
  */
 
 function createCounter(n) {
-  return function(){
-    return n++;
+  var a=n;
+  var dem=function(){
+    return a++;
   }
+  return dem;
 }
 
 module.exports = createCounter;

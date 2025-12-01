@@ -28,10 +28,10 @@
  */
 
 function reduce(nums, fn, init) {
-  let a = init;                  
+  var a = init;                  
     
     for (let i = 0; i < nums.length; i++) {
-        a = fn(a, nums[i]);        
+      a = fn(a, nums[i]);        
     }
     
     return a;

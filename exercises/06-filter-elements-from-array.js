@@ -26,7 +26,7 @@
  */
 
 function filter(arr, fn) {
-  const r = [];              
+  var r = [];              
     
     for (let i = 0; i < arr.length; i++) {
       if (fn(arr[i], i)) {

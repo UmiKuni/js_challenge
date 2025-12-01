@@ -23,12 +23,23 @@
  */
 
 function createCounter(init) {
-  let current = init;
-  return {
-        increment: () => ++current,
-        decrement: () => --current,
-        reset: () => current = init
-    };
+  var a=init;
+  var b=init;
+  function increment(){
+    a++;
+    return a;
+  }
+  function decrement(){
+    a--;
+    return a;
+  }
+  function reset(){
+    a=b;
+    return b;
+  }
+  return{
+    increment, decrement, reset
+    }
 }
 
 module.exports = createCounter;
