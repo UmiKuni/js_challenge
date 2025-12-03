@@ -17,7 +17,14 @@
  */
 
 function argumentsLength(...args) {
-  // TODO: Implement this function
+  return args.length; 
 }
 
 module.exports = argumentsLength;
+
+// Use Counter 
+// let counter = 0;
+//  for (let i = 0; i < args.length; i++) {
+//    counter++;
+//  }
+//  return counter;

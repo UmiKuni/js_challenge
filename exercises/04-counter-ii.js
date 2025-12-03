@@ -22,8 +22,31 @@
  * - 0 <= calls.length <= 1000
  */
 
-function createCounter(init) {
-  // TODO: Implement this function
+function createCounter(init) 
+{
+  let counter = init;
+
+  function increment()
+  {
+    return ++counter;
+  }
+  
+  function decrement()
+  {
+    return --counter;
+  }
+  
+  function reset()
+  {
+    counter = init;
+    return counter;
+  }
+  
+  return {
+    increment: increment,
+    decrement: decrement,
+    reset: reset
+  };
 }
 
 module.exports = createCounter;
